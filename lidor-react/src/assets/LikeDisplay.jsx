@@ -4,9 +4,9 @@ function LikeDisplay(props) {
 
   return (
     <div>
-      <p>Number of Likes: {likeCount}</p>
+      <p>Likes: {likeCount}</p>
       <p>
-        {isLiked //זה נקרא ternary operator – צורת קיצור ל־if / else.
+        {isLiked
           ? "סימנת לייק לפוסט זה"
           : "עדיין לא סימנת לייק לפוסט זה"}
       </p>
