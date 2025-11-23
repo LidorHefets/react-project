@@ -3,8 +3,8 @@ function LikeDisplay(props) {
   const isLiked = props.isLiked;
 
   return (
-    <div>
-      <p>Likes: {likeCount}</p>
+    <div className="likes-text">
+      <p className="likes-count">Likes: {likeCount}</p>
       <p>
         {isLiked
           ? "סימנת לייק לפוסט זה"

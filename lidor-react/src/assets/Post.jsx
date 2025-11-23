@@ -25,13 +25,14 @@ class Post extends Component {
 
   render() {
     return (
-      <div>
-        <h3>פוסט לדוגמה</h3>
+      <div className="post-container">
+        <h3 className="post-title">פוסט לדוגמה</h3>
 
-        <button onClick={this.toggleLike}>
-          {this.state.isLiked ? "Unlike" : "Like"}
-        </button>
-
+        <div className="post-actions">
+          <button onClick={this.toggleLike}>
+            {this.state.isLiked ? "Unlike" : "Like"}
+          </button>
+        </div>
         <LikeDisplay
           likeCount={this.state.likeCount}
           isLiked={this.state.isLiked}

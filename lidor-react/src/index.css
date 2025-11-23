@@ -11,6 +11,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;   
+  align-items: flex-start;  
+  padding-top: 80px;
 }
 
 a {
@@ -54,6 +60,55 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.post-container {
+  background-color: #ffffff;
+  padding: 24px 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+  direction: rtl; 
+  text-align: right;
+}
+
+.post-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.post-actions {
+  margin-bottom: 18px;
+}
+
+.like-button {
+  padding: 8px 18px;
+  border-radius: 50px;
+  border: 1px solid #111;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.like-button:hover {
+  background-color: #f2f2f2;
+}
+
+.like-button:active {
+  transform: scale(0.97);
+}
+
+.likes-text {
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
+
+.likes-count {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
